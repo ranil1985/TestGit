@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:orientation="vertical"
+    android:weightSum="24" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <TextView
+            style="@style/header_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/create_name_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="@string/name_text"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="12" >
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="12"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/pax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="Pax"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="12" 
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/paxEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/name"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="left" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                     android:layout_weight="1" 
+                     android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_horizontal"
+                      android:layout_marginLeft="30dp"
+                        android:src="@drawable/crown_pink_icon2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="Promoter"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="12"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editEventBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bottom_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/reset"
+            style="@style/bottom_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/reset_text" />
+
+        <TextView
+            android:id="@+id/submit"
+            style="@style/bottom_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/submit_text" />
+    </LinearLayout>
+
+</LinearLayout>

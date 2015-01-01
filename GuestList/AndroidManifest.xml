@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guestlist.src"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.guestlist.src.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guestlist.src.EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.guestlist.src.CreateEditEventActivity"
+            android:label="@string/title_activity_create_event" >
+        </activity>
+        <activity
+            android:name="com.guestlist.src.SubmitResultActivity"
+            android:label="@string/title_activity_submit_result"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.guestlist.src.SingleEventAttendenceActivity"
+            android:label="@string/title_activity_single_event_attendence"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.guestlist.src.CreateNamesActivity"
+            android:label="@string/title_activity_ceate_names"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.guestlist.src.GuestListFragment"
+            android:label="@string/title_activity_guest_list" >
+        </activity>
+    </application>
+
+</manifest>
